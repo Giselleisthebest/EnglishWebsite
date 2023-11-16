@@ -1,0 +1,191 @@
+body{
+  background-color:#D0A2F7 ;
+  height: 100%;
+  width: 100%;
+  margin: 0px ;
+  border: 10px solid white;
+}
+
+h1{
+  font-size: 47px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  letter-spacing: -0.8px;
+  word-spacing: 1px;
+  color: #000000;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: italic;
+  font-variant: normal;
+  text-transform: capitalize;
+  text-align:center;
+  text-decoration: underline;
+
+}
+
+h3{
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: -0.8px;
+  word-spacing: 1px;
+  color: #000000;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: italic;
+  font-variant: normal;
+  text-transform: capitalize;
+  text-align:center;
+  text-decoration: underline #e3e0e6;
+}
+
+p{
+  text-align:center;
+  font-size: 17px;
+}
+
+p#two{
+  font-size:20px;
+  text-align:center;
+  font: italic normal 20px/1.2 "Souci Sans";
+  letter-spacing: 0px;
+  background-color:white;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+img{
+  width: 500px;
+  height: 600px;
+  background-color:white;
+  border-radius: 30px;
+  padding:20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img#two{
+  width: 500px;
+  height: 500px;
+  background-color:white;
+  border-radius: 30px;
+}
+
+
+.ghost
+{
+  width: 140px;
+  height: 160px;
+  background-color: #f2f2f2;
+  border-radius: 70px 70px 0 0;
+  position: relative;
+  cursor: pointer;
+  animation: floating 2s infinite ease-in-out;
+}
+
+@keyframes floating{
+  50%{
+    transform: translateY(-30px);
+  }
+}
+
+.face
+{
+  width: 100px;
+  position: absolute;
+  top: 60px;
+  left: calc(50% - 50px);
+}
+
+.eyes
+{
+  height: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.eyes span
+{
+  width: 24px;
+  height: 24px;
+  background-color: #2c3a47;
+  border-radius: 50%;
+  transition: .3s linear;
+}
+
+.ghost:hover .eyes span
+{
+  height: 16px;
+}
+
+.mouth
+{
+  width: 40px;
+  height: 20px;
+  background-color: #2c3a47;
+  margin: auto;
+  border-radius: 0 0 20px 20px;
+  transition: .3s linear;
+}
+
+.ghost:hover .mouth
+{
+  height: 12px;
+  background: red;
+}
+
+.hands
+{
+  width: 180px;
+  position: absolute;
+  left: -20px;
+  top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hands span
+{
+  width: 20px;
+  height: 30px;
+  background-color: #f2f2f2;
+}
+
+.hands span:first-child
+{
+  border-radius: 20px 0 0 20px;
+}
+
+.hands span:last-child
+{
+  border-radius: 0 20px 20px 0;
+}
+
+.feet
+{
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  display: flex;
+}
+
+.feet span
+{
+  flex: 1;
+  height: 20px;
+  background-color: #f2f2f2;
+  border-radius: 0 0 20px 20px;
+}
+
+.feet span:first-child
+{
+  border-radius: 0 0 20px 12px;
+}
+
+.feet span:last-child
+{
+  border-radius: 0 0 12px 20px;
+}
+
